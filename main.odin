@@ -11,7 +11,7 @@ main :: proc() {
 
 start_function :: proc (main_container : ^zd.Eh) {
     filename := zd.new_datum_string ("ex1.math")
-    msg := zd.make_message("input", filename, zd.make_cause (main_container, nil) )
+    msg := zd.make_message("", filename, zd.make_cause (main_container, nil) )
     main_container.handler(main_container, msg)
 }
 
