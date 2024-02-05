@@ -15,4 +15,4 @@ transpile.drawio.json: $(LIBSRC)/transpile.drawio
 	$(D2J) $(LIBSRC)/transpile.drawio
 
 clean:
-	rm -rf arith0d arith0d.dSYM
+	rm -rf arith0d arith0d.dSYM *~ *.json
