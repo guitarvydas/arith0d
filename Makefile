@@ -3,7 +3,7 @@ ODIN_FLAGS ?= -debug -o:none
 D2J=0d/das2json/das2json
 
 run: arith0d transpile.drawio.json
-	./arith0d main arith0d.drawio $(LIBSRC)/transpile.drawio
+	./arith0d ex1.math main arith0d.drawio $(LIBSRC)/transpile.drawio
 
 arith0d: arith0d.drawio.json
 	odin build . $(ODIN_FLAGS)
