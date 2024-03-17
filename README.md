@@ -3,8 +3,10 @@
 ![source code simple arithmetic parser to WASM, JS, Python, Common Lisp](./doc/arith0d-main.drawio.svg)
 
 usage:
- first time initialization:
+
+ first time installation:
   git submodule update --init --recursive
+
  every time: 
   make
 

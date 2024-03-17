@@ -344,6 +344,427 @@
     },
     {
         "file": "0D/odin/std/transpile.drawio",
+        "name": "Copy of Transpile",
+        "children": [
+            {
+                "name": "Read Text File",
+                "id": 7
+            },
+            {
+                "name": "'0d/odin/std/rwr.sem.js'",
+                "id": 13
+            },
+            {
+                "name": "'0d/odin/std/rwr.ohm'",
+                "id": 17
+            },
+            {
+                "name": "Ohm",
+                "id": 18
+            },
+            {
+                "name": "'RWR'",
+                "id": 27
+            },
+            {
+                "name": "Ohm (using file names)",
+                "id": 31
+            },
+            {
+                "name": "Read Text File",
+                "id": 32
+            },
+            {
+                "name": "String Concatenate",
+                "id": 36
+            },
+            {
+                "name": "Read Text File",
+                "id": 44
+            }
+        ],
+        "connections": [
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "rwrsupportfn",
+                "target": {
+                    "name": "Read Text File",
+                    "id": 32
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "ohmfn",
+                "target": {
+                    "name": "Read Text File",
+                    "id": 44
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "grammar name",
+                "target": {
+                    "name": "Ohm",
+                    "id": 18
+                },
+                "target_port": "grammar name"
+            },
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "input",
+                "target": {
+                    "name": "Ohm",
+                    "id": 18
+                },
+                "target_port": "input"
+            },
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "input",
+                "target": {
+                    "name": "'0d/odin/std/rwr.sem.js'",
+                    "id": 13
+                },
+                "target_port": "\u237a"
+            },
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "input",
+                "target": {
+                    "name": "'0d/odin/std/rwr.ohm'",
+                    "id": 17
+                },
+                "target_port": "\u237a"
+            },
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "input",
+                "target": {
+                    "name": "'RWR'",
+                    "id": 27
+                },
+                "target_port": "\u237a"
+            },
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "ohmfn",
+                "target": {
+                    "name": "Ohm",
+                    "id": 18
+                },
+                "target_port": "grammar"
+            },
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "input",
+                "target": {
+                    "name": "Ohm",
+                    "id": 18
+                },
+                "target_port": "input"
+            },
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "rwrfn",
+                "target": {
+                    "name": "Ohm (using file names)",
+                    "id": 31
+                },
+                "target_port": "input"
+            },
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "rwrfn",
+                "target": {
+                    "name": "Read Text File",
+                    "id": 7
+                },
+                "target_port": ""
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Read Text File",
+                    "id": 32
+                },
+                "source_port": "",
+                "target": {
+                    "name": "String Concatenate",
+                    "id": 36
+                },
+                "target_port": "1"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Read Text File",
+                    "id": 7
+                },
+                "source_port": "",
+                "target": {
+                    "name": "Ohm (using file names)",
+                    "id": 31
+                },
+                "target_port": "input"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "String Concatenate",
+                    "id": 36
+                },
+                "source_port": "",
+                "target": {
+                    "name": "Ohm",
+                    "id": 18
+                },
+                "target_port": "semantics"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Ohm (using file names)",
+                    "id": 31
+                },
+                "source_port": "",
+                "target": {
+                    "name": "String Concatenate",
+                    "id": 36
+                },
+                "target_port": "2"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "'0d/odin/std/rwr.sem.js'",
+                    "id": 13
+                },
+                "source_port": "\u237a",
+                "target": {
+                    "name": "Ohm (using file names)",
+                    "id": 31
+                },
+                "target_port": "semanticsfn"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Read Text File",
+                    "id": 44
+                },
+                "source_port": "",
+                "target": {
+                    "name": "Ohm",
+                    "id": 18
+                },
+                "target_port": "grammar"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "'0d/odin/std/rwr.sem.js'",
+                    "id": 13
+                },
+                "source_port": "\u237a",
+                "target": {
+                    "name": "Ohm (using file names)",
+                    "id": 31
+                },
+                "target_port": "semanticsfn"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "'0d/odin/std/rwr.ohm'",
+                    "id": 17
+                },
+                "source_port": "\u237a",
+                "target": {
+                    "name": "Ohm (using file names)",
+                    "id": 31
+                },
+                "target_port": "grammarfn"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "'RWR'",
+                    "id": 27
+                },
+                "source_port": "\u237a",
+                "target": {
+                    "name": "Ohm (using file names)",
+                    "id": 31
+                },
+                "target_port": "grammar name"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "Ohm (using file names)",
+                    "id": 31
+                },
+                "source_port": "",
+                "target": {
+                    "name": "Ohm",
+                    "id": 18
+                },
+                "target_port": "semantics"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "'0d/odin/std/rwr.ohm'",
+                    "id": 17
+                },
+                "source_port": "\u237a",
+                "target": {
+                    "name": "Ohm (using file names)",
+                    "id": 31
+                },
+                "target_port": "grammarfn"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Read Text File",
+                    "id": 32
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Ohm",
+                    "id": 18
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "String Concatenate",
+                    "id": 36
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Ohm (using file names)",
+                    "id": 31
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Read Text File",
+                    "id": 7
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Read Text File",
+                    "id": 44
+                },
+                "source_port": "\u2717",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "\u2717"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "Ohm",
+                    "id": 18
+                },
+                "source_port": "",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": ""
+            }
+        ]
+    },
+    {
+        "file": "0D/odin/std/transpile.drawio",
         "name": "Ohm (using file names)",
         "children": [
             {
